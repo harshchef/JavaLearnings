@@ -1,7 +1,7 @@
 package AbstractFactory;
 
 // Notification.java
- interface Notification {
+interface Notification {
     void sendNotification();
 }
 
@@ -42,38 +42,19 @@ class SmsNotificationFactory implements NotificationFactory {
     }
 }
 
-// AbstractFactory.java
-abstract class AbstractFactory {
-    abstract NotificationFactory getFactory(String type);
-}
-
-// NotificationAbstractFactory.java
-class NotificationAbstractFactory extends AbstractFactory {
-    @Override
-    NotificationFactory getFactory(String type) {
-        if ("EMAIL".equalsIgnoreCase(type)) {
-            return new EmailNotificationFactory();
-        } else if ("SMS".equalsIgnoreCase(type)) {
-            return new SmsNotificationFactory();
-        }
-        return null;
-    }
-}
-
 // AbstractFactoryPatternExample.java
 public class AbstractFactoryPatternExample {
     public static void main(String[] args) {
-        AbstractFactory abstractFactory = new NotificationAbstractFactory();
+        NotificationFactory factory;
 
         // Get an Email Notification Factory
-        NotificationFactory emailFactory = abstractFactory.getFactory("EMAIL");
-        Notification emailNotification = emailFactory.createNotification();
+        factory = new EmailNotificationFactory();
+        Notification emailNotification = factory.createNotification();
         emailNotification.sendNotification(); // Output: Sending email notification
 
         // Get an SMS Notification Factory
-        NotificationFactory smsFactory = abstractFactory.getFactory("SMS");
-        Notification smsNotification = smsFactory.createNotification();
+        factory = new SmsNotificationFactory();
+        Notification smsNotification = factory.createNotification();
         smsNotification.sendNotification(); // Output: Sending SMS notification
     }
 }
-
