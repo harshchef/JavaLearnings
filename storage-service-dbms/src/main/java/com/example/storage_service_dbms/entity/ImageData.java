@@ -11,7 +11,7 @@ import lombok.Data;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Data
+@Data // for getter setter tostring
 public class ImageData {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
