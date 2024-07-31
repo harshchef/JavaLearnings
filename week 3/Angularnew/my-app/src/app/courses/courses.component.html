@@ -1,0 +1,9 @@
+<h1>{{ title | uppercase }}</h1>
+<p>{{text| summary }}</p>
+<ul>
+  <li *ngFor="let course of courses">{{ course }}</li>
+</ul>
+
+<input [(ngModel)]="email" (keyup.enter)="OnKeyUp()">
+<button class="btn btn-primary" (click)="onSave($event)">Save</button>
+<img [src]="imageUrl">
