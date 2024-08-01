@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses/courses.component';
 import { FormsModule } from '@angular/forms';
 import { SummaryPipe } from './courses/summary.pipe';
+import { InputFormatDirective } from './courses/input-format.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
-    SummaryPipe
+    SummaryPipe,
+    InputFormatDirective
   ],
   imports: [
     BrowserModule,

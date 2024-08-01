@@ -7,6 +7,22 @@ import { CoursesService } from './courses.service';
   styleUrls: ['./courses.component.css'] // Corrected to "styleUrls"
 })
 export class CoursesComponent {
+trackCourse(index: any,course: any){
+  course? index:undefined;
+
+}
+onRemove(temp: string) {
+  const indexToRemove = this.courses.indexOf(temp);
+
+if (indexToRemove > -1) {
+ this.courses .splice(indexToRemove, 1);
+}
+
+
+}
+onAdd() {
+this.courses.push("cr8")
+}
   title = "hello";
   courses: string[]; // Assuming getCourses() returns an array of strings
   email: string | undefined; // Define the type for better clarity
@@ -26,4 +42,6 @@ export class CoursesComponent {
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aliquid debitis natus nisi impedit tenetur consequuntur placeat pariatur eaque earum alias minima sint aut, omnis eveniet rerum quaerat. Natus, molestias
   `
   imageUrl = "https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg";
+  viewMode="mapView";
+
 }

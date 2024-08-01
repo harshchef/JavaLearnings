@@ -1,9 +1,66 @@
 <h1>{{ title | uppercase }}</h1>
 <p>{{text| summary }}</p>
-<ul>
-  <li *ngFor="let course of courses">{{ course }}</li>
+
+
+
+<input type="text" [appInputFormat]="'uppercase'" placeholder="Enter text here">
+
+
+
+<div *ngIf="courses.length>0; then course else noCourse">
+    
+</div>
+
+<ng-template #course  >
+  List of Courses
+  <ul>
+    <li *ngFor="let course of courses;  even as isEven"> <span *ngIf="isEven">Even</span> -    {{ course }}
+    
+    <button class="btn btn-primary" (click)="onRemove(course)"> Remove</button>
+    <br>
+    <br>
+    
+    </li>
+
+
+  </ul>
+  </ng-template>
+<button class="btn btn-primary"  (click)="onAdd()">    Add</button>
+
+<ng-template #noCourse  >
+<h1>NO courses found</h1>
+</ng-template>
+
+
+
+<div [hidden]="courses.length === 0">
+  List of Courses
+  <ul>
+    <li *ngFor="let course of courses;trackBy trackCourse">{{ course }}</li>
+
+  </ul>
+</div>
+
+<div [hidden]="courses.length > 0">
+  <h1>No courses found</h1>
+</div>
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link" [class.active]="viewMode === 'map'" (click)="viewMode = 'map'">MapView</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" [class.active]="viewMode === 'list'" (click)="viewMode = 'list'">ListView</a>
+  </li>
 </ul>
+
+<div  [ngSwitch]="viewMode">
+  <div *ngSwitchCase="'map'"  > Map View Content</div>
+  <div *ngSwitchCase="'list'"   > List View Content</div>
+  <div *ngSwitchDefault  > Otherwise</div>
+</div>
+
+
 
 <input [(ngModel)]="email" (keyup.enter)="OnKeyUp()">
 <button class="btn btn-primary" (click)="onSave($event)">Save</button>
-<img [src]="imageUrl">
+<img [src]="imageUrl">  
