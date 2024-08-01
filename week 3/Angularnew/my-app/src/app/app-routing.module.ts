@@ -5,10 +5,14 @@ import { CoursesComponent } from './courses/courses.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { HomeComponent } from './home/home.component';
 import { UsersComponent } from './users/users.component';
+import { PostsComponent } from './posts/posts.component';
 
 const appRoutes:Routes=[
   {
     path: '',component: HomeComponent
+  },
+  {
+    path: 'posts',component: PostsComponent
   },
   {
     path: 'users/:id/:name',component: UsersComponent

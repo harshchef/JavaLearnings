@@ -1,0 +1,25 @@
+<!-- <p>posts works!</p>
+<input
+  (keyup.enter)="createPost(title)" #title
+  type="text"
+  class="form-control">
+<ul class="list-groups">
+  <li *ngFor="let p of posts" class="list-group-item">
+    <input [(ngModel)]="p.title" class="form-control" />
+    <button (click)="updatePost(p, p.title)" class="btn btn-default btn-sm">Update</button>
+  </li>
+</ul> -->
+
+
+<p>posts works!</p>
+<input
+  (keyup.enter)="createPost(title)" #title
+  type="text"
+  class="form-control">
+<ul class="list-groups">
+  <li *ngFor="let p of posts" class="list-group-item">
+    <input [(ngModel)]="p.title" class="form-control" />
+    <button (click)="updatePost(p, p.title)" class="btn btn-default btn-sm">Update</button>
+    <button (click)="deletePost(p)" class="btn btn-danger btn-sm">Delete</button>
+  </li>
+</ul>

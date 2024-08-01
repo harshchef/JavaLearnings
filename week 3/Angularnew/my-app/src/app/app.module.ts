@@ -12,6 +12,8 @@ import { SignupFormComponent } from './signup-form/signup-form.component';
 import { Route, RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { UsersComponent } from './users/users.component';
+import { PostsComponent } from './posts/posts.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -23,13 +25,15 @@ import { UsersComponent } from './users/users.component';
 
     InputFormatDirective,
       HomeComponent,
-      UsersComponent
+      UsersComponent,
+      PostsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    HttpClientModule,
    
     AppRoutingModule
   ],
