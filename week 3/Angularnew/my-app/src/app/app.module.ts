@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { UsersComponent } from './users/users.component';
 import { PostsComponent } from './posts/posts.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormComponent } from './form/form.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     InputFormatDirective,
       HomeComponent,
       UsersComponent,
-      PostsComponent
+      PostsComponent,
+      FormComponent
   ],
   imports: [
     BrowserModule,

@@ -20,7 +20,7 @@ public class ImageData {
     private String name;
 
     @Lob
-    @Column(name = "imageData")
+    @Column(name = "imageData",columnDefinition = "LONGBLOB")
     private byte[] imageData;
 
 

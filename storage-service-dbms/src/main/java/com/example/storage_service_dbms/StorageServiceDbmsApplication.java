@@ -11,7 +11,10 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.util.List;
 
+
+@CrossOrigin(origins = "http://localhost:4200")
 @SpringBootApplication
 @RestController
 @RequestMapping("/image")
@@ -32,11 +35,19 @@ public class StorageServiceDbmsApplication {
 	@GetMapping("/{filename}")
 	public ResponseEntity<?> downloadImage(@PathVariable String filename)
 	{
+
 		byte[] imageData=storeService.downloadImage(filename);
 		return  ResponseEntity.status(HttpStatus.OK).contentType(MediaType.valueOf("image/png"))
 				.body(imageData);
 
 	}
+
+	@GetMapping("/filenames")
+	public ResponseEntity<List<String>> getFilenames() {
+		List<String> filenames = storeService.getFilenames();
+		return ResponseEntity.status(HttpStatus.OK).body(filenames);
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(StorageServiceDbmsApplication.class, args);
 	}
