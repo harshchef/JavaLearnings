@@ -1,0 +1,125 @@
+[33mcommit 990d17968ad7ea409746ef99e1a53048cbd7c27c[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32madi[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Aditya Kumar <adityakumar0718@gmail.com>
+Date:   Wed Aug 14 12:44:28 2024 +0530
+
+    logging and caching
+
+[33mcommit 4d169c946a2ebc325fdf4d8a159bafcedacd761b[m
+Author: Aditya Kumar <adityakumar0718@gmail.com>
+Date:   Thu Aug 1 22:41:00 2024 +0530
+
+    http requests handling
+
+[33mcommit aa2e1cbee0da2fb3100693fbf633c8427e8a64c2[m
+Author: Aditya Kumar <adityakumar0718@gmail.com>
+Date:   Thu Aug 1 16:53:23 2024 +0530
+
+    Routing navigation
+
+[33mcommit d1aea9df1a775bd96d2b24ad55c36302412cbd61[m
+Author: Aditya Kumar <adityakumar0718@gmail.com>
+Date:   Thu Aug 1 11:21:28 2024 +0530
+
+    Reactive form and directives
+
+[33mcommit fff332ab37bd326d7d517b52a310dea143ce3305[m
+Author: Aditya Kumar <adityakumar0718@gmail.com>
+Date:   Wed Jul 31 12:24:24 2024 +0530
+
+    Angular Introducion and Typescript
+
+[33mcommit 953a9025c7fcb4bb6e083ab41b636c102a1b00d2[m
+Author: Aditya Kumar <adityakumar0718@gmail.com>
+Date:   Wed Jul 31 11:26:06 2024 +0530
+
+    Angular and typescript introduction
+
+[33mcommit 9880f2f75986d684ea8e16fdd1de43ab08c6f4ef[m
+Author: Aditya Kumar <adityakumar0718@gmail.com>
+Date:   Mon Jul 29 17:40:39 2024 +0530
+
+    html css js and registration form
+
+[33mcommit 5f1d94698d7dca28500f5b6ca97a7a7be2ebe56a[m
+Author: Aditya Kumar <adityakumar0718@gmail.com>
+Date:   Mon Jul 29 17:36:50 2024 +0530
+
+    html css js and a registration form
+
+[33mcommit 723363a6096218699633847da3016bf175bc9105[m
+Author: Aditya Kumar <adityakumar0718@gmail.com>
+Date:   Fri Jul 26 12:20:31 2024 +0530
+
+    Code coverage for service layer
+
+[33mcommit 0e49c39a8a9ccb6fad78f32b42563770b1171267[m
+Author: Aditya Kumar <adityakumar0718@gmail.com>
+Date:   Wed Jul 24 17:16:53 2024 +0530
+
+    Kafka Learnings with API
+
+[33mcommit c42c0af1ae0b4694080b1133dda587acdedbc264[m
+Author: Aditya Kumar <adityakumar0718@gmail.com>
+Date:   Wed Jul 24 16:59:16 2024 +0530
+
+    Juint for APIs
+
+[33mcommit 10afa6164584883821a22f9faa7ea32f294912c4[m
+Author: Aditya Kumar <adityakumar0718@gmail.com>
+Date:   Wed Jul 24 12:09:57 2024 +0530
+
+    Junit and Unit Testing
+
+[33mcommit f6638d39d17a5790a782f713726c8d4bdd0e8078[m
+Author: Aditya Kumar <adityakumar0718@gmail.com>
+Date:   Tue Jul 23 13:57:12 2024 +0530
+
+    Week 2 Day 2 learning Upload download a file using Database
+
+[33mcommit 3ec72cb745fe2dc1619aee9f63ad70a805b8ea04[m
+Author: Aditya Kumar <adityakumar0718@gmail.com>
+Date:   Mon Jul 22 17:18:57 2024 +0530
+
+    day 2 learning creation of rest APIs  and JPA jdbc spring data jpa
+
+[33mcommit 2a15db2183062a3259dedc82224173182e246977[m
+Author: Aditya Kumar <adityakumar0718@gmail.com>
+Date:   Mon Jul 22 11:20:25 2024 +0530
+
+    week1
+
+[33mcommit aa719264e26baab5677265e196080ee5dee1fdab[m
+Author: Aditya Kumar <adityakumar0718@gmail.com>
+Date:   Thu Jul 18 16:48:51 2024 +0530
+
+    Day 4 learning - Spring Boot intro api routes creation and maven learnings
+
+[33mcommit d85b584e8bfda0ae0abcceeade0e3f19543b5486[m
+Author: Aditya Kumar <adityakumar0718@gmail.com>
+Date:   Wed Jul 17 23:02:11 2024 +0530
+
+    Day3 Annotations, beans, dependency injection in spring
+
+[33mcommit be0a4cec66e85266a384a7e417c3233c9e2a2808[m
+Author: Aditya Kumar <adityakumar0718@gmail.com>
+Date:   Wed Jul 17 22:56:10 2024 +0530
+
+    empty file
+
+[33mcommit 444fafae9362145c801c44fb2a2860bef4bbbf75[m
+Author: Aditya <adityakumar0718@gmail.com>
+Date:   Tue Jul 16 17:11:15 2024 +0530
+
+    Day 2 interface,options,streams,method referencing
+
+[33mcommit 5fcf87d0dc4529b695c4037c8e870bea8591517e[m
+Author: Aditya <adityakumar0718@gmail.com>
+Date:   Tue Jul 16 10:50:23 2024 +0530
+
+    code cleaned
+
+[33mcommit 1c98fe69dc3c6f166545223515bc2fafe638635a[m
+Author: Aditya <adityakumar0718@gmail.com>
+Date:   Tue Jul 16 10:29:37 2024 +0530
+
+    Initial commit on main branch
